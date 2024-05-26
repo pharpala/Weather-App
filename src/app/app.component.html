@@ -11,12 +11,12 @@
 <div class="container" *ngIf="weatherdata">
   <div class="upper-data">
     <img src="../assets/day.png" *ngIf=" weatherdata.main.temp > 22" />
-    <img src="../assets/cold.jpg" *ngIf="weatherdata.main.temp <= 22" />
+    <img src="../assets/night.png" *ngIf="weatherdata.main.temp <= 22" />
 
     <div class="weather-data">
       <div class="location">{{ weatherdata.name }}</div>
       <div class="temperature">
-        {{ weatherdata.main.temp | number : "1.0-0" }}°C
+        {{ (weatherdata.main.temp - 32) * (5/9) | number : "1.0-0" }}°C
       </div>
     </div>
   </div>
@@ -26,33 +26,33 @@
       <div class="info-block">
         <div class="info-block-label">
           <img src="../assets/high.png" alt="" />
-          <span>temp</span>
+          <span> Max temp</span>
         </div>
-        <div class="info-block-value">{{ weatherdata.main.temp }}°C</div>
+        <div class="info-block-value">{{ (weatherdata.main.temp_max- 32) * (5/9) | number : "1.0-0" }}°C</div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/low.png" alt="" />
+          <span>Min temp</span>
+        </div>
+        <div class="info-block-value">{{ (weatherdata.main.temp_min - 32) * (5/9) | number : "1.0-0" }}°C</div>
       </div>
       <div class="info-block">
         <div class="info-block-label">
           <img src="../assets/temperature.png" alt="" />
-          <span>feels like</span>
+          <span>Feels like</span>
         </div>
         <div class="info-block-value">
-          {{ weatherdata.main.feels_like }}°C
+          {{ (weatherdata.main.feels_like - 32) * (5/9) | number : "1.0-0" }}°C
         </div>
-      </div>
-      <div class="info-block">
-        <div class="info-block-label">
-          <img src="../assets/humidity.png" alt="" />
-          <span>humidty</span>
-        </div>
-        <div class="info-block-value">{{ weatherdata.main.humidity }}%</div>
       </div>
       <div class="info-block">
         <div class="info-block-label">
           <img src="../assets/storm.png" alt="" />
-          <span>wind</span>
+          <span>Wind</span>
         </div>
         <div class="info-block-value">
-          {{ weatherdata.wind.speed }} km/h
+          {{ weatherdata.wind.speed | number : "1.0-0" }} km/h
         </div>
       </div>
     </div>
