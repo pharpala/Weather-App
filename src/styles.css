@@ -106,6 +106,7 @@ body {
     width: 50%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 5px;
 }
 
 .info-block-label {
@@ -139,12 +140,12 @@ body {
 }
 
 .search input {
-    background-color: var(--white);
+    background-color: var(--shadow-light);
     outline: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 1em;
-    color: var(--blue-1);
+    color: var(--grey-1);
     font-size: 0.8em;
     text-align: center;
 }
