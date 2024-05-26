@@ -1,4 +1,4 @@
-# Weater-App
+# Weather-App
 
 ## Table of Contents
 
