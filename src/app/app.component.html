@@ -10,8 +10,8 @@
 </div>
 <div class="container" *ngIf="weatherdata">
   <div class="upper-data">
-    <img src="../assets/day.png" *ngIf=" weatherdata.main.temp > 22" />
-    <img src="../assets/night.png" *ngIf="weatherdata.main.temp <= 22" />
+    <img src="../assets/day.png" *ngIf=" (weatherdata.main.temp - 32) * (5/9) > 22" />
+    <img src="../assets/night.png" *ngIf="(weatherdata.main.temp - 32) * (5/9) <= 22" />
 
     <div class="weather-data">
       <div class="location">{{ weatherdata.name }}</div>
