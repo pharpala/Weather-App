@@ -5,7 +5,7 @@ export const environment: Environment = {
     weatherApiBaseUrl: 'https://open-weather13.p.rapidapi.com',
 
     XRapidAPIKeyHeader: 'X-RapidAPI-Key',
-    XRapidAPIKeyValue: 'ac17567b57msh66c8e74ac14864ap1eea5cjsnb10936a2863d',
+    XRapidAPIKeyValue: 'f62ee6aa41msh5eb2a47a8bd0112p12b0edjsna54cbb17d1b9',
 
     XRapidAPIHostHeader: 'X-RapidAPI-Host',
     XRapidAPIHostValue: 'open-weather13.p.rapidapi.com',
