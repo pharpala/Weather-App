@@ -35,6 +35,12 @@ Welcome to the Weather-App! This is an Angular web application that fetches weat
 - **HTML/CSS**: Structure and styling of the application.
 - **RapidAPI**: Service used to fetch weather data.
 
+## Usage
+
+1. Try the app out without downloading it by clicking [here.](https://weather-app-2fb9a.firebaseapp.com)
+2. Enter the name of the city for which you want to fetch the weather.
+3. View the current weather details displayed on the screen.
+
 ## Installation
 
 To run this application locally, follow these steps:
@@ -59,12 +65,6 @@ To run this application locally, follow these steps:
     ```
 
 4. **Open your browser** and navigate to `http://localhost:4200`.
-
-## Usage
-
-1. Open the application in your browser.
-2. Enter the name of the city for which you want to fetch the weather.
-3. View the current weather details displayed on the screen.
 
 ## Screenshots
 
