@@ -1,6 +1,12 @@
-# WeatherApp
+# Weather-App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Simple Angular web project to show current weather data based on the inputs given by the user.
+
+API used: https://www.weatherapi.com/
+
+![Screenshot (398)](https://github.com/BornAsSlayer/weatherModPublic/assets/57178220/305c19ae-aacc-479d-acc4-4f3c8b475ea8)
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
 ## Development server
 
